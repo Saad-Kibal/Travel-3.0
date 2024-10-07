@@ -20,6 +20,7 @@ body {
     min-height: 100vh;
     max-width: 100%;
     font-family: "work sans" , sans-serif;
+    text-align: center;
 }
 
 a {
@@ -30,6 +31,15 @@ a {
 ul {
     list-style: none;
     gap: 30px;
+}
+
+button {
+    background: var(--main-color-gradient);
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    color: var(--text_color);
+    font-weight: 700;
 }
 
 section {
@@ -49,6 +59,17 @@ article {
 .flex {
     display: flex;
     justify-content: flex-start;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 400;
+    font-family: "water brush";
+    color: var(--main_color);
+}
+.big-text {
+    font-size: 64px;
+    font-weight: 200;
 }
 
 /*header section*/
@@ -85,11 +106,8 @@ article {
 }
 
 .sign button {
-    background: var(--main-color-gradient);
     padding: 10px 25px;
-    border: none;
-    border-radius: 18px;
-    color: var(--text-color2);
+    color: var(--text_color);
     font-weight: 700;
 }
 
@@ -108,6 +126,7 @@ article {
     align-self: center;
     width: 580px;
     color: var(--text_color);
+    text-align: left;
 }
 
 .hero-content h1 {
@@ -148,12 +167,8 @@ article {
     height: 20px;
 }
 .card button {
-    background: var(--main-color-gradient);
     width: 65px;
     height: 65px;
-    border: none;
-    border-radius: 18px;
-    cursor: pointer;
 }
 .card button:active {
     box-shadow: 1px 1px 1px 1px #ffffffa2 , -1px -1px 1px 1px #ffffffa2;
@@ -162,5 +177,127 @@ article {
     font-size: 24px;
     color: var(--text_color);
 }
+
+/*destinations section*/
+
+.destinations {
+    margin: 20px 0;
+}
+
+
+.destinations-group {
+    display: grid;
+    grid-template-columns:repeat(4 , minmax(260px,1fr));
+    grid-auto-rows: 300px;
+    grid-template-areas: 
+    "malasia malasia dubai greece"
+    "malasia malasia singapor singapor";
+    gap: 15px;
+    padding: 40px 0;
+    justify-content: center;
+}
+
+.location {
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.destinations-group img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.location::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1414146e;
+    transition: 0.3s ease;
+}
+.location:hover::after{
+    background-color:transparent;
+}
+
+.location div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 3;
+}
+
+.location div p {
+    font-size: 46px;
+    font-weight: 400;
+    font-family: "water brush";
+    color: var(--text_color);
+}
+
+.location div button {
+    width: 100px;
+    height: 48px;
+}
+
+.malasia {
+    grid-area: malasia;
+}
+.dubai {
+    grid-area: dubai;
+}
+.greece {
+    grid-area: greece;
+}
+.singapor {
+    grid-area: singapor;
+}
+
+.destinations button {
+    width: 122px;
+    height: 52px;
+
+}
+
+/*activity section*/
+
+
+.activity-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , 378px);
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.activity {
+    background-color: #FFF9F0;
+    backdrop-filter: blur(10px);
+    align-self: center;
+    padding: 35px;
+    border-radius: 5px;
+    color: #999999;
+}
+
+.activity:first-of-type {
+    background: var(--main-color-gradient);
+    color: var(--text_color);
+}
+
+.activity img {
+    width: 126px;
+    height: 122px;
+}
+
+.activity h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+
+
 
 
