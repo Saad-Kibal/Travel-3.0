@@ -285,17 +285,18 @@ article {
     padding: 35px;
     border-radius: 5px;
     color: #999999;
-    transition: 0.3s ease;
 }
 
 .activity:hover {
     color: #fff;
     background: var(--main-color-gradient);
-}
-svg:hover {
-    fill: white;
+    fill: #fff;
+    transition: 0.3 ease;
 }
 
+.activity:hover svg path {
+    fill: #fff;
+}
 
 .activity h3 {
     font-size: 32px;
