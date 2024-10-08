@@ -271,7 +271,7 @@ article {
 
 .activity-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+    grid-template-columns: repeat(auto-fit , minmax(270px , 1fr));
     gap: 20px;
     justify-content: space-between;
     padding: 30px 0;
@@ -303,7 +303,7 @@ article {
 /*packages section*/
 .packages-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(340px , 1fr));
+    grid-template-columns: repeat(auto-fit , minmax(270px , 1fr));
     grid-auto-rows: 412px;
     margin-top: 30px;
     gap: 20px;
@@ -345,7 +345,7 @@ article {
 
 .photos-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+    grid-template-columns: repeat(auto-fit , minmax(270px , 1fr));
     justify-content: space-between;
     grid-auto-rows: 486px;
     gap: 20px;
