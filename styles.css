@@ -81,7 +81,8 @@ article {
 .header {
     background-color: transparent;
     padding: 20px;
-    position: fixed;
+    position: absolute;
+    top: 1;
     width: 100vw;
 }
 
@@ -284,17 +285,17 @@ article {
     padding: 35px;
     border-radius: 5px;
     color: #999999;
+    transition: 0.3s ease;
 }
 
-.activity:first-of-type {
+.activity:hover {
+    color: #fff;
     background: var(--main-color-gradient);
-    color: var(--text_color);
+}
+svg:hover {
+    fill: white;
 }
 
-.activity img {
-    width: 126px;
-    height: 122px;
-}
 
 .activity h3 {
     font-size: 32px;
