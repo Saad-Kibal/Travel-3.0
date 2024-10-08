@@ -83,7 +83,7 @@ article {
     padding: 20px;
     position: absolute;
     top: 1;
-    width: 100vw;
+    width: 100%;
 }
 
 .header-container {
@@ -438,8 +438,9 @@ article {
     font-size: 46px;
     font-weight: 700;
 }
-
-
+.form {
+    margin: 15px 0;
+}
 .form input {
     padding: 20px;
     border: none;
