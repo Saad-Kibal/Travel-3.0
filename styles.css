@@ -386,7 +386,7 @@ article {
     height: 0;
     border: 40px solid transparent;
     transform: rotate(-90deg);
-    border-top-color:#ff0000b7;
+    border-top-color:#ec583e;
     border-radius: 10px;
     z-index: -1;
 }
@@ -438,13 +438,12 @@ article {
     font-size: 46px;
     font-weight: 700;
 }
-.form {
-    flex-wrap: wrap;
-}
+
 
 .form input {
     padding: 20px;
     border: none;
+    width: 100%;
 }
 
 .form:active {
